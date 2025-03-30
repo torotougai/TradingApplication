@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #f6f6f6;
+    background-color: #171723;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .menu-item {
+    @apply px-3 py-1 hover:bg-gray-700 cursor-pointer;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center px-4 py-2 hover:bg-gray-700 cursor-pointer;
+  }
+  
+  .watchlist-item {
+    @apply flex justify-between items-center px-4 py-2 hover:bg-gray-700 cursor-pointer;
+  }
+  
+  .price-up {
+    @apply text-app-green;
+  }
+  
+  .price-down {
+    @apply text-app-red;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600;
+  }
+  
+  .btn-buy {
+    @apply px-4 py-2 bg-app-green text-white rounded hover:bg-green-600;
+  }
+  
+  .btn-sell {
+    @apply px-4 py-2 bg-app-red text-white rounded hover:bg-red-600;
+  }
+  
+  .input-field {
+    @apply bg-app-darker text-white px-3 py-2 rounded border border-gray-700 focus:outline-none focus:border-blue-500;
+  }
+}
